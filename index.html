@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSave - Your Personal Finance Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #10b981;
+            --accent-color: #f97316;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 0 0 2rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image i {
+            font-size: 5rem;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 2rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .countdown {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge i {
+            color: var(--primary-color);
+        }
+
+        .testimonials {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .guarantee {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Transform Your Finances in Just 30 Days!</h1>
+            <p class="subtitle">Join 50,000+ users who've saved an average of $500/month with our smart budgeting app</p>
+            <div class="hero-image">
+                <i class="fas fa-piggy-bank"></i>
+            </div>
+            <div class="countdown">
+                <i class="fas fa-clock"></i> Special offer ends in: <span id="countdown">02:00:00</span>
+            </div>
+            <a href="https://smrturl.co/a/s7721573beb/11035?s1=" class="cta-button">Start Your Free Trial Now</a>
+        </header>
+
+        <div class="trust-badges">
+            <div class="badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>100% Secure</span>
+            </div>
+            <div class="badge">
+                <i class="fas fa-lock"></i>
+                <span>Bank-Level Security</span>
+            </div>
+            <div class="badge">
+                <i class="fas fa-star"></i>
+                <span>4.9/5 Rating</span>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"I saved $1,200 in my first month! This app completely changed how I manage my money."</p>
+                <p><strong>- Sarah M., 28</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Finally, a budgeting app that actually works. The automated savings feature is a game-changer."</p>
+                <p><strong>- Michael T., 32</strong></p>
+            </div>
+        </div>
+
+        <div class="guarantee">
+            <h2>Our 30-Day Money-Back Guarantee</h2>
+            <p>Try SmartSave risk-free. If you're not completely satisfied, we'll refund your subscription, no questions asked.</p>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        function startCountdown() {
+            let timeLeft = 2 * 60 * 60; // 2 hours in seconds
+            const countdownElement = document.getElementById('countdown');
+
+            const timer = setInterval(() => {
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+
+                countdownElement.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = "Offer Expired!";
+                } else {
+                    timeLeft--;
+                }
+            }, 1000);
+        }
+
+        startCountdown();
+    </script>
+</body>
+</html>
